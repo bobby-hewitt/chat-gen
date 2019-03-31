@@ -1,0 +1,29 @@
+.header{
+	z-index: 100000;
+	position: absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height:50px;
+	background:#46B3B1;
+	.headerButton{
+		cursor:pointer;
+		position: absolute;
+		top:0px;
+		
+		width:50px;
+		height:50px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&.left{
+			left:0;
+		}
+		&.right{
+			right: 0;
+		}
+		img{
+			height:16px;
+		}
+	}
+}

@@ -1,0 +1,14 @@
+.question{
+	padding:5px;
+	background:#f7f7f7;
+	border-radius: 3px;
+	margin-bottom:5px;
+	.questionName{
+		font-size: 8px;
+		font-weight: 900;
+		color:#ff0000;
+	}
+	.questionText{
+		font-size: 12px;
+	}
+}

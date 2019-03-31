@@ -1,0 +1,59 @@
+.responseMessage{
+	position: relative;
+	padding:5px;
+	padding-bottom:0;
+	background:rgb(253,241,177);
+	border-radius: 3px;
+	margin-bottom:5px;
+	
+	.responseTextContainer{
+		display: flex;
+		flex-direction: column;
+		.responseName{
+			font-size: 8px;
+			font-weight: 900;
+			color:#ff0000;
+		}
+		.responseText{
+			font-size: 24px;
+		}
+	}
+	.goBackIcon{
+		cursor:pointer;
+		opacity:0.2;
+		position: absolute;
+		right:20px;
+		top:50%;
+		transform:translateY(-50%);
+		img{
+			height:15px;
+		}
+	}
+	.responseInstructions{
+		font-size: 8px;
+		font-weight: 900;
+		opacity: 0.5;
+		text-align: center;
+	}
+	.rangeSlider{
+		position: absolute;
+		right:15px;
+		top:0;
+		bottom:0;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex:1;
+		left:50px;
+		input::-webkit-slider-runnable-track {  }
+		input::-moz-range-track { background:red; }
+		input::-ms-track { opacity:0.2 }
+		
+	}
+	
+}
+.settingsQuestion{
+		font-size: 8px;
+		font-weight: 900;
+		margin: 10px 0 5px 0;
+	}
