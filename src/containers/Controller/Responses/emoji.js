@@ -12,7 +12,7 @@ export default class Response extends Component {
 			<div className="responseMessage" >
 				<div className="responseTextContainer">
 				<p className="responseName">You</p>
-				<p className="responseText">{item.options[item.selection].emoji}</p>
+				<p className="responseText">{item.options[item.selection] ? item.options[item.selection].emoji : ''}</p>
 				</div>
 				{!this.props.isSettings && 
 					<div onClick={this.props.goBack.bind( this, index )}className="goBackIcon">

@@ -50,6 +50,21 @@
 		input::-ms-track { opacity:0.2 }
 		
 	}
+	.colorMessageResponseContainer{
+		flex-direction: row;
+		overflow: hidden;
+		margin-top:3px;
+		.colorMessageResponse{
+			display: inline-block;
+			height:30px;
+			width:30px;
+			border-radius: 10px 0 0 10px;
+		}
+		.second{
+			border-radius: 0 10px 10px 0;
+		}
+	}
+	
 	
 }
 .settingsQuestion{

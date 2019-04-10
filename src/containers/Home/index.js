@@ -8,11 +8,14 @@ import Canvas from '../Canvas'
 import { Paragraph } from 'components'
 
 class Home extends Component {
+
+	componentWillReceiveProps(np){
+		console.log(np.colors)
+	}
 	render(){
 		return(
 			<div className="home">
-				<Paragraph copy="hello" />
-				<Canvas />
+				<Canvas colors={this.props.colors}/>
 				<Controller />
 			</div>
 		)
@@ -20,7 +23,7 @@ class Home extends Component {
 }
 
 const mapStateToProps = state => ({
-
+	colors: state.conversation.colors
 })
 
 const mapDispatchToProps = dispatch => bindActionCreators({

@@ -1,4 +1,7 @@
-import { happy } from './faces'
+import { happy, cheeky, cool, sarcastic, crazy } from './faces'
+import { beach, mountain, home} from './places'
+import { violin, sax, guitar, drum} from './instruments'
+import { baseball, graduation, tophat, fireman, crown } from './hats'
 
 const data = [
   // {
@@ -27,24 +30,29 @@ const data = [
     responseType:'emoji',
     options: [
       {
+      	type: 'emoji',
         emoji: '😀',
         followups: happy
       },
       {
+      	type: 'emoji',
         emoji: '😉',
-        followups: ['A bit cheeky heh?',"You'll always speak your mind", "Let's start drawing something on this canvas"]
+        followups: cheeky
       },
       {
+      	type: 'emoji',
         emoji: '😎',
-        followups: ['Too cool for school', "You really don't care what other people think.", "Let's get this show on the road!"]
+        followups: cool
       },
       {
+      	type: 'emoji',
         emoji: '🙃',
-        followups: ['Sarcasm is the highest form of wit ;) ', "Alright, so you hope people can read between the lines.", "Let's get this show on the road!"]
+        followups: sarcastic
       },
       {
+      	type: 'emoji',
         emoji: '🤪',
-        followups: ["You're a wild one", "Disorder is not to be avoided.", "Let's get this show on the road!"]
+        followups: crazy
       },
       
     ]
@@ -57,19 +65,23 @@ const data = [
   },
   {
     type: 'response',
+    responseType: 'emoji',
     selection: null,
     options: [
       {
+      	type: 'emoji',
         emoji: '🏖',
-        followups: ['Aha, a beach bum!', "Who wouldn't want to be by the seaside?!"]
+        followups: beach
       },
       {
+      	type: 'emoji',
         emoji: '🏡',
-        followups: ['Home sweet home.', "Nothing like a cosy night in."]
+        followups: home
       },
       {
+      	type: 'emoji',
         emoji: '⛰️',
-        followups: ['A naturalist!', "No.. Not a naturist", "A natur...al...ist", "Great!"]
+        followups: mountain
       }
     ]
   },
@@ -86,22 +98,27 @@ const data = [
   {
     type: 'response',
     selection: null,
+    responseType:'emoji',
     options: [
       {
+      	type: 'emoji',
         emoji: '🥁',
-        followups: ['Drop the beat!', "Ok, rhythm and structure are important", "Let's incoorporate that into our masterpiece"]
+        followups: drum
       },
       {
+      	type: 'emoji',
         emoji: '🎷',
-        followups: ['A bit of sax',"Soulful!", "Ok, lets bring that in to the piece"]
+        followups: sax
       },
       {
+      	type: 'emoji',
         emoji: '🎸',
-        followups: ['You rock out?', "Ok, I'm getting to know a bit more now", "Let's start making this feel a bit more 'you'"]
+        followups: guitar
       },
       {
+      	type: 'emoji',
         emoji: '🎻',
-        followups: ['Bring out the violins', "Sometimes sad, sometimes punchy.", "Let's see how we can make that work"]
+        followups: violin
       }
     ]
   },
@@ -123,26 +140,32 @@ const data = [
   {
     type: 'response',
     selection: null,
+    responseType:'emoji',
     options: [
       {
+      	type: 'emoji',
         emoji: '🎩',
-        followups: ['A top hat.', "Prim and proper.", "Alright, let's drop it in."]
+        followups: tophat
       },
       {
+      	type: 'emoji',
         emoji: '🧢',
-        followups: ['Casual as you like',"A classic baseball cap", "Alright, let's do it."]
+        followups: baseball
       },
       {
+      	type: 'emoji',
         emoji: '🎓',
-        followups: ['Education, education, education.', "Ok smarty pants.", "Let's make make this happen/"]
+        followups: graduation
       },
       {
+      	type: 'emoji',
         emoji: '⛑',
-        followups: ['A rescuer, A saviour. A hero', "Let's see how we can make that work"]
+        followups: fireman
       },
        {
+       	type: 'emoji',
         emoji: '👑',
-        followups: ['A born leader. ', "Let's get this in there"]
+        followups: crown
       }
     ]
   },
@@ -154,6 +177,7 @@ const data = [
     {
     type: 'response',
     selection: null,
+    responseType:'emoji',
     options: [
       {
         emoji: '🦋',

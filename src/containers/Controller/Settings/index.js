@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import './style.scss'
-import Response from '../Response'
+import Response from '../Responses'
 import Bot from '../Bot'
 
 export default class Settings extends Component {

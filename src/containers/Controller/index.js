@@ -38,7 +38,7 @@ class Controller extends Component {
 			setTimeout(() => {
 				this.props.nextInFlow()
 				this.updateScroll()
-			}, time * 2)	
+			}, time / 2 || 500)	
 		}
 	}
 
@@ -49,11 +49,16 @@ class Controller extends Component {
 
 	sendResponse(selection){
 		const { flow, index } = this.props
+		console.log('sending response,', selection)
 		this.props.userResponse(selection)
-		let followupsLength = flow[index].options[selection].followups.length
-		for(var i = 0; i < followupsLength + 1; i++){
-			this.showFollowups(followupsLength, i)
-		}
+		// setTimeout(() => {
+			this.nextQuestion()
+		// },500)
+		
+		// let followupsLength = flow[index].options[selection].followups.length
+		// for(var i = 0; i < followupsLength + 1; i++){
+		// 	this.showFollowups(followupsLength, i)
+		// }
 	}
 
 	showFollowups(followupsLength, i){
@@ -109,7 +114,6 @@ class Controller extends Component {
 }
 
 const mapStateToProps = state => ({
-	followupIndex: state.conversation.followupIndex,
 	flow: state.conversation.flow,
 	index:state.conversation.index,
 	isMinimised: state.conversation.isMinimised,
